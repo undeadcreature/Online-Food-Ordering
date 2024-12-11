@@ -1,2 +1,34 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Source code files
+*.java linguist-detectable=true
+*.kt linguist-detectable=true
+
+# Configuration files
+*.xml linguist-detectable=true
+*.yml linguist-detectable=true
+*.properties linguist-detectable=true
+pom.xml linguist-detectable=true
+*.gradle linguist-detectable=true
+
+# Web-related files (if any)
+*.html linguist-detectable=true
+*.css linguist-detectable=true
+*.js linguist-detectable=true
+
+# Exclude compiled and generated files
+*.class linguist-generated
+target/* linguist-vendored
+build/* linguist-vendored
+
+# Exclude IDE-specific files
+.idea/* linguist-vendored
+*.iml linguist-vendored
+*.project linguist-vendored
+*.classpath linguist-vendored
+
+# Exclude dependencies
+*.jar linguist-vendored
+*.war linguist-vendored
+lib/* linguist-vendored
+
